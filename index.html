@@ -44,10 +44,10 @@ div.middle {
 					<div class="middle">
 						<p>Vencedor do grupo A</p>
 						<select class="Base_Combobox">
-							<option>Catar</option>
-							<option>Equador</option>
-							<option>Senegal</option>
-							<option>Holanda</option>
+							<option id="catar" value="Catar">Catar</option>
+							<option id="equador" value="Equador">Equador</option>
+							<option id="senegal" value="Senegal">Senegal</option>
+							<option id="holanda" value="Holanda">Holanda</option>
 						</select>
 					</div>
 				</div>
@@ -55,10 +55,10 @@ div.middle {
 					<div class="middle">
 						<p>Vencedor do grupo B</p>
 						<select class="Base_Combobox">
-							<option>Inglaterra</option>
-							<option>Irã</option>
-							<option>EUA</option>
-							<option>País de Gales/Escócia/Ucrânia</option>
+							<option id="inglaterra" value="Inglaterra">Inglaterra</option>
+							<option id="ira" value="Irã">Irã</option>
+							<option id="eua" value="EUA">EUA</option>
+							<option id="gales-escocia-ucrania" value="País de Gales/Escócia/Ucrânia">País de Gales/Escócia/Ucrânia</option>
 						</select>
 					</div>
 				</div>
@@ -66,10 +66,10 @@ div.middle {
 					<div class="middle">
 						<p>Vencedor do grupo C</p>
 						<select class="Base_Combobox">
-							<option>Argentina</option>
-							<option>Arabia Saudita</option>
-							<option>México</option>
-							<option>Polônia</option>
+							<option id="argentina" value="Argentina">Argentina</option>
+							<option id="arabia" value="Arabia Saudita">Arabia Saudita</option>
+							<option id="mexico" value="México">México</option>
+							<option id="polonia" value="Polônia">Polônia</option>
 						</select>
 					</div>
 				</div>
@@ -77,10 +77,10 @@ div.middle {
 					<div class="middle">
 						<p>Vencedor do grupo D</p>
 						<select class="Base_Combobox">
-							<option>França</option>
-							<option>Peru/Emirados Árabes/Austrália</option>
-							<option>Dinamarca</option>
-							<option>Tunísia</option>
+							<option id="franca" value="França">França</option>
+							<option id="peru-emirados-australia" value="Peru/Emirados Árabes/Austrália">Peru/Emirados Árabes/Austrália</option>
+							<option id="dinamarca" value="Dinamarca">Dinamarca</option>
+							<option id="tunisia" value="Tunísia">Tunísia</option>
 						</select>
 					</div>
 				</div>
@@ -91,10 +91,10 @@ div.middle {
 					<div class="middle">
 						<p>Vencedor do grupo E</p>
 						<select class="Base_Combobox">
-							<option>Espanha</option>
-							<option>Costa Rica/Nova Zelândia</option>
-							<option>Alemanha</option>
-							<option>Japão</option>
+							<option id="espanha" value="Espanha">Espanha</option>
+							<option id="costarica-nzelandia" value="Costa Rica/Nova Zelândia">Costa Rica/Nova Zelândia</option>
+							<option id="alemanha" value="Alemanha">Alemanha</option>
+							<option id="japao" value="Japão">Japão</option>
 						</select>
 					</div>
 				</div>
@@ -102,10 +102,10 @@ div.middle {
 					<div class="middle">
 						<p>Vencedor do grupo F</p>
 						<select class="Base_Combobox">
-							<option>Bélgica</option>
-							<option>Canadá</option>
-							<option>Marrocos</option>
-							<option>Croácia</option>
+							<option id="belgica" value="Bélgica">Bélgica</option>
+							<option id="canada" value="Canadá">Canadá</option>
+							<option id="marrocos" value="Marrocos">Marrocos</option>
+							<option id="criacia" value="Croácia">Croácia</option>
 						</select>
 					</div>
 				</div>
@@ -113,10 +113,10 @@ div.middle {
 					<div class="middle">
 						<p>Vencedor do grupo G</p>
 						<select class="Base_Combobox">
-							<option>Brasil</option>
-							<option>Sérvia</option>
-							<option>Suíça</option>
-							<option>Camarões</option>
+							<option id="brasil" value="Brasil">Brasil</option>
+							<option id="servia" value="Sérvia">Sérvia</option>
+							<option id="suica" value="Suíça">Suíça</option>
+							<option id="camaroes" value="Camarões">Camarões</option>
 						</select>
 					</div>
 				</div>
@@ -124,10 +124,10 @@ div.middle {
 					<div class="middle">
 						<p>Vencedor do grupo H</p>
 						<select class="Base_Combobox">
-							<option>Portugal</option>
-							<option>Gana</option>
-							<option>Uruguai</option>
-							<option>Coreia do Sul</option>
+							<option id="portugal" value="Portugal">Portugal</option>
+							<option id="gana" value="Gana">Gana</option>
+							<option id="uruguai" value="Uruguai">Uruguai</option>
+							<option id="coreia" value="Coréia do Sul">Coreia do Sul</option>
 						</select>
 					</div>
 				</div>
@@ -144,9 +144,11 @@ div.middle {
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<form>
-							<p>Jodo dia 13/12/22 12h</p>
-							<label>A confirmar</label> <input type="number" id="input">
-							<label>A confirmar</label> <input type="number" id="input">
+							<p>Jodo dia 3/12/22 12h</p>
+							<label>A confirmar</label> 
+							<input type="number" id="input-oitavas">
+							<label>A confirmar</label> 
+							<input type="number" id="input-oitavas2">
 							<input type="submit" class="input" id="send">
 						</form>
 					</div>
@@ -154,9 +156,11 @@ div.middle {
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<form>
-							<p>Jodo dia 13/12/22 12h</p>
-							<label>A confirmar</label> <input type="number" id="input">
-							<label>A confirmar</label> <input type="number" id="input">
+							<p>Jodo dia 3/12/22 16h</p>
+							<label>A confirmar</label> 
+							<input type="number" id="input-oitavas3">
+							<label>A confirmar</label> 
+							<input type="number" id="input-oitavas4">
 							<input type="submit" class="input" id="send">
 						</form>
 					</div>
@@ -164,9 +168,11 @@ div.middle {
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<form>
-							<p>Jodo dia 13/12/22 12h</p>
-							<label>A confirmar</label> <input type="number" id="input">
-							<label>A confirmar</label> <input type="number" id="input">
+							<p>Jodo dia 4/12/22 12h</p>
+							<label>A confirmar</label> 
+							<input type="number" id="input-oitavas5">
+							<label>A confirmar</label> 
+							<input type="number" id="input-oitavas6">
 							<input type="submit" class="input" id="send">
 						</form>
 					</div>
@@ -174,9 +180,11 @@ div.middle {
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<form>
-							<p>Jodo dia 13/12/22 12h</p>
-							<label>A confirmar</label> <input type="number" id="input">
-							<label>A confirmar</label> <input type="number" id="input">
+							<p>Jodo dia 4/12/22 16h</p>
+							<label>A confirmar</label> 
+							<input type="number" id="input-oitavas7">
+							<label>A confirmar</label> 
+							<input type="number" id="input-oitavas8">
 							<input type="submit" class="input" id="send">
 						</form>
 					</div>
@@ -184,9 +192,11 @@ div.middle {
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<form>
-							<p>Jodo dia 13/12/22 12h</p>
-							<label>A confirmar</label> <input type="number" id="input">
-							<label>A confirmar</label> <input type="number" id="input">
+							<p>Jodo dia 5/12/22 12h</p>
+							<label>A confirmar</label> 
+							<input type="number" id="input-oitavas9">
+							<label>A confirmar</label> 
+							<input type="number" id="input-oitavas10">
 							<input type="submit" class="input" id="send">
 						</form>
 					</div>
@@ -194,9 +204,11 @@ div.middle {
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<form>
-							<p>Jodo dia 13/12/22 12h</p>
-							<label>A confirmar</label> <input type="number" id="input">
-							<label>A confirmar</label> <input type="number" id="input">
+							<p>Jodo dia 5/12/22 16h</p>
+							<label>A confirmar</label> 
+							<input type="number" id="input-oitavas11">
+							<label>A confirmar</label> 
+							<input type="number" id="input-oitavas12">
 							<input type="submit" class="input" id="send">
 						</form>
 					</div>
@@ -204,9 +216,11 @@ div.middle {
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<form>
-							<p>Jodo dia 13/12/22 12h</p>
-							<label>A confirmar</label> <input type="number" id="input">
-							<label>A confirmar</label> <input type="number" id="input">
+							<p>Jodo dia 6/12/22 12h</p>
+							<label>A confirmar</label> 
+							<input type="number" id="input-oitavas13">
+							<label>A confirmar</label> 
+							<input type="number" id="input-oitavas14">
 							<input type="submit" class="input" id="send">
 						</form>
 					</div>
@@ -214,9 +228,11 @@ div.middle {
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<form>
-							<p>Jodo dia 13/12/22 12h</p>
-							<label>A confirmar</label> <input type="number" id="input">
-							<label>A confirmar</label> <input type="number" id="input">
+							<p>Jodo dia 6/12/22 16h</p>
+							<label>A confirmar</label> 
+							<input type="number" id="input-oitavas15">
+							<label>A confirmar</label> 
+							<input type="number" id="input-oitavas16">
 							<input type="submit" class="input" id="send">
 						</form>
 					</div>
@@ -233,44 +249,48 @@ div.middle {
 					<div class="col-sm-3 mx-auto">
 						<div class="middle">
 							<form>
-								<p>Jodo dia 13/12/22 12h</p>
-								<label>A confirmar</label> <input type="number"
-									id="input-oitavas"> <label>A confirmar</label> <input
-									type="number" id="input-oitavas2"> <input type="submit"
-									class="input" id="send">
+								<p>Jodo dia 9/12/22 12h</p>
+								<label>A confirmar</label> 
+								<input type="number" id="input-quartas"> 
+								<label>A confirmar</label>
+								<input type="number" id="input-quartas2">
+								<input type="submit" class="input" id="send">
 							</form>
 						</div>
 					</div>
 					<div class="col-sm-3 mx-auto">
 						<div class="middle">
 							<form>
-								<p>Jodo dia 13/12/22 12h</p>
-								<label>A confirmar</label> <input type="number"
-									id="input-oitavas3"> <label>A confirmar</label> <input
-									type="number" id="input-oitavas4"> <input type="submit"
-									class="input" id="send">
+								<p>Jodo dia 9/12/22 16h</p>
+								<label>A confirmar</label> 
+								<input type="number" id="input-quartas3"> 
+								<label>A confirmar</label> 
+								<input type="number" id="input-quartas4"> 
+								<input type="submit" class="input" id="send">
 							</form>
 						</div>
 					</div>
 					<div class="col-sm-3 mx-auto">
 						<div class="middle">
 							<form>
-								<p>Jodo dia 13/12/22 12h</p>
-								<label>A confirmar</label> <input type="number"
-									id="input-oitavas5"> <label>A confirmar</label> <input
-									type="number" id="input-oitavas6"> <input type="submit"
-									class="input" id="send">
+								<p>Jodo dia 10/12/22 12h</p>
+								<label>A confirmar</label> 
+								<input type="number"id="input-quartas5"> 
+								<label>A confirmar</label>
+								<input type="number" id="input-quartas6"> 
+								<input type="submit" class="input" id="send">
 							</form>
 						</div>
 					</div>
 					<div class="col-sm-3 mx-auto">
 						<div class="middle">
 							<form>
-								<p>Jodo dia 13/12/22 12h</p>
-								<label>A confirmar</label> <input type="number"
-									id="input-oitavas7"> <label>A confirmar</label> <input
-									type="number" id="input-oitavas8"> <input type="submit"
-									class="input" id="send">
+								<p>Jodo dia 10/12/22 16h</p>
+								<label>A confirmar</label> 
+								<input type="number"id="input-quartas7">
+								<label>A confirmar</label> 
+								<input type="number" id="input-quartas8"> 
+								<input type="submit" class="input" id="send">
 							</form>
 						</div>
 					</div>
@@ -279,26 +299,29 @@ div.middle {
 
 
 		</section>
-
+		<!--section semi-final-->
 		<section>
 			<div class="container">
 				<div class="row">
 					<h1 class="h1">SEMI-FINAL</h1>
 					<div class="coluna-semi mx-auto">
 						<div class="middle">
-							<p>Jodo dia 13/12/22 12h</p>
-							<label>A confirmar</label> <input type="number"
-								id="input-oitavas"> <label>A confirmar</label> <input
-								type="number" id="input-final2"> <input type="submit"
-								class="input" id="send">
+							<p>Jodo dia 13/12/22 16h</p>
+							<label>A confirmar</label> 
+							<input type="number" id="input-semi">
+							<label>A confirmar</label> 
+							<input type="number" id="input-semi2"> 
+							<input type="submit" class="input" id="send">
 						</div>
 					</div>
 					<div class="coluna-semi mx-auto">
 						<div class="middle">
 							<form>
-								<p>Jodo dia 13/12/22 12h</p>
-								<label>A confirmar</label> <input type="number" id="input-semi3">
-								<label>A confirmar</label> <input type="number" id="input-semi4">
+								<p>Jodo dia 14/12/22 16h</p>
+								<label>A confirmar</label> 
+								<input type="number" id="input-semi3">
+								<label>A confirmar</label> 
+								<input type="number" id="input-semi4">
 								<input type="submit" class="input" id="send">
 							</form>
 						</div>
@@ -311,11 +334,12 @@ div.middle {
 					<div class="coluna-final mx-auto">
 						<div class="middle">
 							<form>
-								<p>Jodo dia 13/12/22 12h</p>
-								<label>A confirmar</label> <input type="number" id="input-final">
-								<label>A confirmar</label> <input type="number"
-									id="input-final2"> <input type="submit" class="input"
-									id="send">
+								<p>Jodo dia 18/12/22 12h</p>
+								<label>A confirmar</label> 
+								<input type="number" id="input-final">
+								<label>A confirmar</label> 
+								<input type="number"id="input-final2"> 
+								<input type="submit" class="input" id="send">
 							</form>
 						</div>
 					</div>
