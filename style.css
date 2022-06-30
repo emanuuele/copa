@@ -358,6 +358,9 @@ table {
   caption-side: bottom;
   border-collapse: collapse;
 }
+.tabela-jogos{
+	margin: 25px
+}
 
 caption {
   padding-top: 0.5rem;
@@ -2052,6 +2055,11 @@ progress {
   color: #212529;
   vertical-align: top;
   border-color: #dee2e6;
+  
+}
+.tabela-jogos{
+	margin: 10px;
+  text-align: center;
 }
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
@@ -3536,7 +3544,7 @@ textarea.form-control-lg {
 
 .btn-link {
   font-weight: 400;
-  color: #0d6efd;
+  color: #0000;
   text-decoration: underline;
 }
 .btn-link:hover {
