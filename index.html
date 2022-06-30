@@ -21,17 +21,30 @@ div.middle {
 </head>
 
 <body>
+
 	<!--section chaveamento-->
 	<section>
 		<div class="container">
-			<div class="chaveamento"></div>
-			<div class="img mx auto">
-				<div class="icone mx-auto">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="middle"></div>
 					<img src="icon.png" alt="logo da copa do mundo de 2022"
 						width="100px" height="100px">
 				</div>
+				<div class="col-sm-4">
+					<div class="middle">
+					<a href="Jogos.html" class="btn">Fases de Grupos</a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="middle">
+					<a href="campos.html" class="btn">Campos</a>
+					</div>
+				</div>
 			</div>
 		</div>
+
+
 	</section>
 
 	<!-- section da fase de grupos-->
@@ -43,7 +56,14 @@ div.middle {
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<p>Vencedor do grupo A</p>
-						<select class="Base_Combobox">
+						<select class="Base_Combobox" id="grupo-a">
+							<option id="catar" value="Catar">Catar</option>
+							<option id="equador" value="Equador">Equador</option>
+							<option id="senegal" value="Senegal">Senegal</option>
+							<option id="holanda" value="Holanda">Holanda</option>
+						</select>
+						<p>2° do grupo A</p>
+						<select class="Base_Combobox" id="grupo-a2">
 							<option id="catar" value="Catar">Catar</option>
 							<option id="equador" value="Equador">Equador</option>
 							<option id="senegal" value="Senegal">Senegal</option>
@@ -54,20 +74,38 @@ div.middle {
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<p>Vencedor do grupo B</p>
-						<select class="Base_Combobox">
+						<select class="Base_Combobox" id="grupo-b">
 							<option id="inglaterra" value="Inglaterra">Inglaterra</option>
 							<option id="ira" value="Irã">Irã</option>
 							<option id="eua" value="EUA">EUA</option>
-							<option id="gales-escocia-ucrania" value="País de Gales/Escócia/Ucrânia">País de Gales/Escócia/Ucrânia</option>
+							<option id="gales-escocia-ucrania"
+								value="País de Gales/Escócia/Ucrânia">País de Gales</option>
+						</select>
+						<p>2° do grupo B</p>
+						<select class="Base_Combobox" id="grupo-b2">
+							<option id="inglaterra" value="Inglaterra">Inglaterra</option>
+							<option id="ira" value="Irã">Irã</option>
+							<option id="eua" value="EUA">EUA</option>
+							<option id="gales-escocia-ucrania"
+								value="País de Gales/Escócia/Ucrânia">País de Gales</option>
 						</select>
 					</div>
 				</div>
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<p>Vencedor do grupo C</p>
-						<select class="Base_Combobox">
+						<select class="Base_Combobox" id="grupo-c">
 							<option id="argentina" value="Argentina">Argentina</option>
-							<option id="arabia" value="Arabia Saudita">Arabia Saudita</option>
+							<option id="arabia" value="Arabia Saudita">Arabia
+								Saudita</option>
+							<option id="mexico" value="México">México</option>
+							<option id="polonia" value="Polônia">Polônia</option>
+						</select>
+						<p>2° do grupo C</p>
+						<select class="Base_Combobox" id="grupo-c2">
+							<option id="argentina" value="Argentina">Argentina</option>
+							<option id="arabia" value="Arabia Saudita">Arabia
+								Saudita</option>
 							<option id="mexico" value="México">México</option>
 							<option id="polonia" value="Polônia">Polônia</option>
 						</select>
@@ -76,9 +114,18 @@ div.middle {
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<p>Vencedor do grupo D</p>
-						<select class="Base_Combobox">
+						<select class="Base_Combobox" id="grupo-d">
 							<option id="franca" value="França">França</option>
-							<option id="peru-emirados-australia" value="Peru/Emirados Árabes/Austrália">Peru/Emirados Árabes/Austrália</option>
+							<option id="peru-emirados-australia"
+								value="Peru/Emirados Árabes/Austrália">Austrália</option>
+							<option id="dinamarca" value="Dinamarca">Dinamarca</option>
+							<option id="tunisia" value="Tunísia">Tunísia</option>
+						</select>
+						<p>2° do grupo D</p>
+						<select class="Base_Combobox" id="grupo-d2">
+							<option id="franca" value="França">França</option>
+							<option id="peru-emirados-australia"
+								value="Peru/Emirados Árabes/Austrália">Austrália</option>
 							<option id="dinamarca" value="Dinamarca">Dinamarca</option>
 							<option id="tunisia" value="Tunísia">Tunísia</option>
 						</select>
@@ -90,9 +137,18 @@ div.middle {
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<p>Vencedor do grupo E</p>
-						<select class="Base_Combobox">
+						<select class="Base_Combobox" id="grupo-e">
 							<option id="espanha" value="Espanha">Espanha</option>
-							<option id="costarica-nzelandia" value="Costa Rica/Nova Zelândia">Costa Rica/Nova Zelândia</option>
+							<option id="costarica-nzelandia" value="Costa Rica/Nova Zelândia">Costa
+								Rica</option>
+							<option id="alemanha" value="Alemanha">Alemanha</option>
+							<option id="japao" value="Japão">Japão</option>
+						</select>
+						<p>2° do grupo E</p>
+						<select class="Base_Combobox" id="grupo-e2">
+							<option id="espanha" value="Espanha">Espanha</option>
+							<option id="costarica-nzelandia" value="Costa Rica/Nova Zelândia">Costa
+								Rica</option>
 							<option id="alemanha" value="Alemanha">Alemanha</option>
 							<option id="japao" value="Japão">Japão</option>
 						</select>
@@ -101,18 +157,32 @@ div.middle {
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<p>Vencedor do grupo F</p>
-						<select class="Base_Combobox">
+						<select class="Base_Combobox" id="grupo-f">
 							<option id="belgica" value="Bélgica">Bélgica</option>
 							<option id="canada" value="Canadá">Canadá</option>
 							<option id="marrocos" value="Marrocos">Marrocos</option>
-							<option id="criacia" value="Croácia">Croácia</option>
+							<option id="croacia" value="Croácia">Croácia</option>
+						</select>
+						<p>2° do grupo F</p>
+						<select class="Base_Combobox" id="grupo-f2">
+							<option id="belgica" value="Bélgica">Bélgica</option>
+							<option id="canada" value="Canadá">Canadá</option>
+							<option id="marrocos" value="Marrocos">Marrocos</option>
+							<option id="croacia" value="Croácia">Croácia</option>
 						</select>
 					</div>
 				</div>
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<p>Vencedor do grupo G</p>
-						<select class="Base_Combobox">
+						<select class="Base_Combobox" id="grupo-g">
+							<option id="brasil" value="Brasil">Brasil</option>
+							<option id="servia" value="Sérvia">Sérvia</option>
+							<option id="suica" value="Suíça">Suíça</option>
+							<option id="camaroes" value="Camarões">Camarões</option>
+						</select>
+						<p>2° do grupo G</p>
+						<select class="Base_Combobox" id="grupo-g2">
 							<option id="brasil" value="Brasil">Brasil</option>
 							<option id="servia" value="Sérvia">Sérvia</option>
 							<option id="suica" value="Suíça">Suíça</option>
@@ -123,7 +193,14 @@ div.middle {
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<p>Vencedor do grupo H</p>
-						<select class="Base_Combobox">
+						<select class="Base_Combobox" id="grupo-h">
+							<option id="portugal" value="Portugal">Portugal</option>
+							<option id="gana" value="Gana">Gana</option>
+							<option id="uruguai" value="Uruguai">Uruguai</option>
+							<option id="coreia" value="Coréia do Sul">Coreia do Sul</option>
+						</select>
+						<p>2° do grupo H</p>
+						<select class="Base_Combobox" id="grupo-h2">
 							<option id="portugal" value="Portugal">Portugal</option>
 							<option id="gana" value="Gana">Gana</option>
 							<option id="uruguai" value="Uruguai">Uruguai</option>
@@ -135,7 +212,7 @@ div.middle {
 		</div>
 
 	</section>
-	<!--section das outavas de final-->
+	<!--section das oitavas de final-->
 
 	<section>
 		<h1 class="h1">OITAVAS DE FINAL</h1>
@@ -144,96 +221,88 @@ div.middle {
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<form>
-							<p>Jodo dia 3/12/22 12h</p>
-							<label>A confirmar</label> 
-							<input type="number" id="input-oitavas">
-							<label>A confirmar</label> 
-							<input type="number" id="input-oitavas2">
-							<input type="submit" class="input" id="send">
+							<p>Jogo dia 3/12/22 12h</p>
+							<select class="Base_Combobox" id="oitavas1">
+								<option id="uruguai" value="Uruguai">vencedorGrupoA</option>
+								<option id="coreia" value="Coréia do Sul">vencedorGrupoB</option>
+							</select>
 						</form>
 					</div>
 				</div>
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<form>
-							<p>Jodo dia 3/12/22 16h</p>
-							<label>A confirmar</label> 
-							<input type="number" id="input-oitavas3">
-							<label>A confirmar</label> 
-							<input type="number" id="input-oitavas4">
-							<input type="submit" class="input" id="send">
+							<p>Jogo dia 3/12/22 16h</p>
+							<select class="Base_Combobox" id="oitavas2">
+								<option id="uruguai" value="Uruguai">vencedorGrupoC</option>
+								<option id="coreia" value="Coréia do Sul">vencedorGrupoD</option>
+							</select>
 						</form>
 					</div>
 				</div>
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<form>
-							<p>Jodo dia 4/12/22 12h</p>
-							<label>A confirmar</label> 
-							<input type="number" id="input-oitavas5">
-							<label>A confirmar</label> 
-							<input type="number" id="input-oitavas6">
-							<input type="submit" class="input" id="send">
+							<p>Jogo dia 4/12/22 12h</p>
+							<select class="Base_Combobox" id="oitavas3">
+								<option id="uruguai" value="Uruguai">vencedorGrupoE</option>
+								<option id="coreia" value="Coréia do Sul">vencedorGrupoF</option>
+							</select>
 						</form>
 					</div>
 				</div>
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<form>
-							<p>Jodo dia 4/12/22 16h</p>
-							<label>A confirmar</label> 
-							<input type="number" id="input-oitavas7">
-							<label>A confirmar</label> 
-							<input type="number" id="input-oitavas8">
-							<input type="submit" class="input" id="send">
+							<p>Jogo dia 4/12/22 16h</p>
+							<select class="Base_Combobox" id="oitavas4">
+								<option id="uruguai" value="Uruguai">vencedorGrupoH</option>
+								<option id="coreia" value="Coréia do Sul">vencedorGrupoG</option>
+							</select>
 						</form>
 					</div>
 				</div>
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<form>
-							<p>Jodo dia 5/12/22 12h</p>
-							<label>A confirmar</label> 
-							<input type="number" id="input-oitavas9">
-							<label>A confirmar</label> 
-							<input type="number" id="input-oitavas10">
-							<input type="submit" class="input" id="send">
+							<p>Jogo dia 5/12/22 12h</p>
+							<select class="Base_Combobox" id="oitavas5">
+								<option id="uruguai" value="Uruguai">vencedorGrupoA2</option>
+								<option id="coreia" value="Coréia do Sul">vencedorGrupoB2</option>
+							</select>
 						</form>
 					</div>
 				</div>
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<form>
-							<p>Jodo dia 5/12/22 16h</p>
-							<label>A confirmar</label> 
-							<input type="number" id="input-oitavas11">
-							<label>A confirmar</label> 
-							<input type="number" id="input-oitavas12">
-							<input type="submit" class="input" id="send">
+							<p>Jogo dia 5/12/22 16h</p>
+							<select class="Base_Combobox" id="oitavas6">
+								<option id="uruguai" value="Uruguai">vencedorGrupoC2</option>
+								<option id="coreia" value="Coréia do Sul">vencedorGrupoD2</option>
+							</select>
 						</form>
 					</div>
 				</div>
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<form>
-							<p>Jodo dia 6/12/22 12h</p>
-							<label>A confirmar</label> 
-							<input type="number" id="input-oitavas13">
-							<label>A confirmar</label> 
-							<input type="number" id="input-oitavas14">
-							<input type="submit" class="input" id="send">
+							<p>Jogo dia 6/12/22 12h</p>
+							<select class="Base_Combobox" id="oitavas7">
+								<option id="uruguai" value="Uruguai">vencedorGrupoE2</option>
+								<option id="coreia" value="Coréia do Sul">vencedorGrupoF2</option>
+							</select>
 						</form>
 					</div>
 				</div>
 				<div class="col-sm-3 mx-auto">
 					<div class="middle">
 						<form>
-							<p>Jodo dia 6/12/22 16h</p>
-							<label>A confirmar</label> 
-							<input type="number" id="input-oitavas15">
-							<label>A confirmar</label> 
-							<input type="number" id="input-oitavas16">
-							<input type="submit" class="input" id="send">
+							<p>Jogo dia 6/12/22 16h</p>
+							<select class="Base_Combobox" id="oitavas8">
+								<option id="uruguai" value="Uruguai">vencedorGrupoG2</option>
+								<option id="coreia" value="Coréia do Sul">vencedorGrupoH2</option>
+							</select>
 						</form>
 					</div>
 				</div>
@@ -249,48 +318,44 @@ div.middle {
 					<div class="col-sm-3 mx-auto">
 						<div class="middle">
 							<form>
-								<p>Jodo dia 9/12/22 12h</p>
-								<label>A confirmar</label> 
-								<input type="number" id="input-quartas"> 
-								<label>A confirmar</label>
-								<input type="number" id="input-quartas2">
-								<input type="submit" class="input" id="send">
+								<p>Jogo dia 9/12/22 12h</p>
+								<select class="Base_Combobox" id="quartas1">
+									<option id="uruguai" value="Uruguai">vencedorOitavas1</option>
+									<option id="coreia" value="Coréia do Sul">vencedorOitavas2</option>
+								</select>
 							</form>
 						</div>
 					</div>
 					<div class="col-sm-3 mx-auto">
 						<div class="middle">
 							<form>
-								<p>Jodo dia 9/12/22 16h</p>
-								<label>A confirmar</label> 
-								<input type="number" id="input-quartas3"> 
-								<label>A confirmar</label> 
-								<input type="number" id="input-quartas4"> 
-								<input type="submit" class="input" id="send">
+								<p>Jogo dia 9/12/22 16h</p>
+								<select class="Base_Combobox" id="quartas2">
+									<option id="uruguai" value="Uruguai">vencedorOitavas3</option>
+									<option id="coreia" value="Coréia do Sul">vencedorOitavas4</option>
+								</select>
 							</form>
 						</div>
 					</div>
 					<div class="col-sm-3 mx-auto">
 						<div class="middle">
 							<form>
-								<p>Jodo dia 10/12/22 12h</p>
-								<label>A confirmar</label> 
-								<input type="number"id="input-quartas5"> 
-								<label>A confirmar</label>
-								<input type="number" id="input-quartas6"> 
-								<input type="submit" class="input" id="send">
+								<p>Jogo dia 10/12/22 12h</p>
+								<select class="Base_Combobox" id="quartas3">
+									<option id="uruguai" value="Uruguai">vencedorOitavas5</option>
+									<option id="coreia" value="Coréia do Sul">vencedorOitavas6</option>
+								</select>
 							</form>
 						</div>
 					</div>
 					<div class="col-sm-3 mx-auto">
 						<div class="middle">
 							<form>
-								<p>Jodo dia 10/12/22 16h</p>
-								<label>A confirmar</label> 
-								<input type="number"id="input-quartas7">
-								<label>A confirmar</label> 
-								<input type="number" id="input-quartas8"> 
-								<input type="submit" class="input" id="send">
+								<p>Jogo dia 10/12/22 16h</p>
+								<select class="Base_Combobox" id="quartas4">
+									<option id="uruguai" value="Uruguai">vencedorOitavas7</option>
+									<option id="coreia" value="Coréia do Sul">vencedorOitavas8</option>
+								</select>
 							</form>
 						</div>
 					</div>
@@ -306,23 +371,21 @@ div.middle {
 					<h1 class="h1">SEMI-FINAL</h1>
 					<div class="coluna-semi mx-auto">
 						<div class="middle">
-							<p>Jodo dia 13/12/22 16h</p>
-							<label>A confirmar</label> 
-							<input type="number" id="input-semi">
-							<label>A confirmar</label> 
-							<input type="number" id="input-semi2"> 
-							<input type="submit" class="input" id="send">
+							<p>Jogo dia 13/12/22 16h</p>
+							<select class="Base_Combobox" id="semi1">
+								<option id="uruguai" value="Uruguai">vencedorQuartas1</option>
+								<option id="coreia" value="Coréia do Sul">vencedorQuartas2</option>
+							</select>
 						</div>
 					</div>
 					<div class="coluna-semi mx-auto">
 						<div class="middle">
 							<form>
-								<p>Jodo dia 14/12/22 16h</p>
-								<label>A confirmar</label> 
-								<input type="number" id="input-semi3">
-								<label>A confirmar</label> 
-								<input type="number" id="input-semi4">
-								<input type="submit" class="input" id="send">
+								<p>Jogo dia 14/12/22 16h</p>
+								<select class="Base_Combobox" id="semi2">
+									<option id="uruguai" value="Uruguai">vencedorQuartas3</option>
+									<option id="coreia" value="Coréia do Sul">vencedorQuartas4</option>
+								</select>
 							</form>
 						</div>
 					</div>
@@ -334,12 +397,11 @@ div.middle {
 					<div class="coluna-final mx-auto">
 						<div class="middle">
 							<form>
-								<p>Jodo dia 18/12/22 12h</p>
-								<label>A confirmar</label> 
-								<input type="number" id="input-final">
-								<label>A confirmar</label> 
-								<input type="number"id="input-final2"> 
-								<input type="submit" class="input" id="send">
+								<p>Jogo dia 18/12/22 12h</p>
+								<select class="Base_Combobox" id="final">
+									<option id="uruguai" value="Uruguai">vencedorSemi1</option>
+									<option id="coreia" value="Coréia do Sul">vencedorSemi2</option>
+								</select>
 							</form>
 						</div>
 					</div>
